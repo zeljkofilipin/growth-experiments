@@ -5,6 +5,7 @@
   "main": "tests/selenium/wdio.conf.js",
   "scripts": {
     "selenium-test": "wdio tests/selenium/wdio.conf.js",
+    "super-linter": "docker run -e RUN_LOCAL=true -v ~/Documents/github/zeljkofilipin/GrowthExperiments:/tmp/lint github/super-linter",
     "test": "eslint . --ext .js"
   },
   "repository": {
