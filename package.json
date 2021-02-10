@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/zeljkofilipin/GrowthExperiments/issues"
   },
-  "homepage": "https://github.com/zeljkofilipin/GrowthExperiments#readme"
+  "homepage": "https://github.com/zeljkofilipin/GrowthExperiments#readme",
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-wikimedia": "^0.18.1"
+  }
 }
