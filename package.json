@@ -1,0 +1,19 @@
+{
+  "name": "growthexperiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeljkofilipin/GrowthExperiments.git"
+  },
+  "author": "Željko Filipin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeljkofilipin/GrowthExperiments/issues"
+  },
+  "homepage": "https://github.com/zeljkofilipin/GrowthExperiments#readme"
+}
