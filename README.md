@@ -1,6 +1,6 @@
 # GrowthExperiments help panel Selenium tests
 
-For more information see https://www.mediawiki.org/wiki/Growth/Focus_on_help_desk/Help_panel and https://www.mediawiki.org/wiki/Selenium
+For more information see [Growth/Focus on help desk/Help panel](https://www.mediawiki.org/wiki/Growth/Focus_on_help_desk/Help_panel) and [MediaWiki Selenium](https://www.mediawiki.org/wiki/Selenium) pages.
 
 ## Setup
 
