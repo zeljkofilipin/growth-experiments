@@ -2,7 +2,7 @@
   "name": "growthexperiments",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "tests/selenium/wdio.conf.js",
   "scripts": {
     "selenium-test": "wdio tests/selenium/wdio.conf.js",
     "test": "eslint . --ext .js"
