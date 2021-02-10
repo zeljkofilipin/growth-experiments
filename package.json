@@ -28,10 +28,5 @@
     "eslint-config-wikimedia": "^0.18.1",
     "wdio-mediawiki": "^1.0.0",
     "webdriverio": "^7.0.1"
-  },
-  "standard": {
-    "ignore": [
-      "**/*.js"
-    ]
   }
 }
