@@ -4,6 +4,13 @@ For more information see https://www.mediawiki.org/wiki/Growth/Focus_on_help_des
 
 ## Setup
 
+Create `.env` file in the root of the repository.
+
+    MW_SCRIPT_PATH=/w
+    MW_SERVER=http://localhost:8080
+    MEDIAWIKI_USER=not-the-real-one
+    MEDIAWIKI_PASSWORD=not-the-real-one
+
 Chromedriver has to run in one terminal window:
 
     chromedriver --url-base=wd/hub --port=4444

@@ -23,6 +23,7 @@
     "@wdio/mocha-framework": "^7.0.0",
     "@wdio/spec-reporter": "^7.0.1",
     "@wdio/sync": "^7.0.1",
+    "dotenv": "^8.2.0",
     "eslint": "^7.19.0",
     "eslint-config-wikimedia": "^0.18.1",
     "wdio-mediawiki": "^1.0.0",

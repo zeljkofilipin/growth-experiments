@@ -1,5 +1,7 @@
 'use strict';
 
+require( 'dotenv' ).config();
+
 /**
  * See also: http://webdriver.io/guide/testrunner/configurationfile.html
  */
@@ -14,12 +16,12 @@ exports.config = {
 	// Defaults are for convenience with MediaWiki-Vagrant
 
 	// Wiki admin
-	mwUser: process.env.MEDIAWIKI_USER || 'Admin',
-	mwPwd: process.env.MEDIAWIKI_PASSWORD || 'vagrant',
+	mwUser: process.env.MEDIAWIKI_USER,
+	mwPwd: process.env.MEDIAWIKI_PASSWORD,
 
 	// Base for browser.url() and Page#openTitle()
-	baseUrl: ( process.env.MW_SERVER || 'http://127.0.0.1:8080' ) + (
-		process.env.MW_SCRIPT_PATH || '/w'
+	baseUrl: ( process.env.MW_SERVER ) + (
+		process.env.MW_SCRIPT_PATH
 	),
 
 	// ==================
