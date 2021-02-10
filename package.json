@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "eslint *.js"
+    "test": "eslint . --ext .js"
   },
   "repository": {
     "type": "git",
