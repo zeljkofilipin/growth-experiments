@@ -31,6 +31,6 @@ Filter by file name and test name:
 
     npm run selenium-test -- --spec tests/selenium/specs/[FILE-NAME] --mochaOpts.grep [TEST-NAME]
 
-# Super-Linter
+## Super-Linter
 
-[![GitHub Super-Linter](https://github.com/<OWNER>/<REPOSITORY>/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![GitHub Super-Linter](https://github.com/zeljkofilipin/GrowthExperiments/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
