@@ -9,7 +9,7 @@ Create `.env` file in the root of the repository.
     MEDIAWIKI_PASSWORD=not-the-real-one
     MEDIAWIKI_USER=not-the-real-one
     MW_SCRIPT_PATH=/w
-    MW_SERVER=http://localhost:8080
+    MW_SERVER=https://test.wikipedia.org
 
 Chromedriver has to run in one terminal window:
 

@@ -9,10 +9,17 @@ describe( 'GrowthExperiments', function () {
 	it( 'help panel should be displayed when editing a random page', function () {
 		UserLoginPage.loginAdmin();
 
-		SpecialRandomPage.openForEditing();
-		SpecialRandomPage.helpPanel.waitForDisplayed();
+		const wikis = [
+			'test.wikipedia.org'
+		];
 
-		assert( SpecialRandomPage.helpPanel.isDisplayed() );
+		wikis.forEach( function ( wiki ) {
+			console.log( wiki );
+			SpecialRandomPage.openForEditing( wiki );
+			SpecialRandomPage.helpPanel.waitForDisplayed();
+			assert( SpecialRandomPage.helpPanel.isDisplayed() );
+			browser.pause( 5000 );
+		} );
 	} );
 
 } );
