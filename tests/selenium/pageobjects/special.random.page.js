@@ -6,7 +6,7 @@ class SpecialRandomPage extends Page {
 	get helpPanel() { return $( '#mw-ge-help-panel-cta-button' ); }
 
 	openForEditing( wiki ) {
-		browser.url( `https://${wiki}/wiki/Special:Random?action=edit` );
+		browser.url( `https://${wiki}/wiki/Special:Random?veaction=edit&vehidebetadialog=1` );
 	}
 
 }
