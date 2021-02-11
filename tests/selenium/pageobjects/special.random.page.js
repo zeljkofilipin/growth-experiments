@@ -3,10 +3,10 @@
 const Page = require( 'wdio-mediawiki/Page' );
 
 class SpecialRandomPage extends Page {
-	get helpPanel() { return $( '#wpName2' ); }
+	get helpPanel() { return $( '#mw-ge-help-panel-cta-button' ); }
 
-	open() {
-		super.openTitle( 'Special:Random' );
+	openForEditing() {
+		super.openTitle( 'Special:Random', { action: 'edit' } );
 	}
 
 }
