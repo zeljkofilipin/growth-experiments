@@ -6,10 +6,10 @@ For more information see [Growth/Focus on help desk/Help panel](https://www.medi
 
 Create `.env` file in the root of the repository.
 
+    MEDIAWIKI_PASSWORD=not-the-real-one
+    MEDIAWIKI_USER=not-the-real-one
     MW_SCRIPT_PATH=/w
     MW_SERVER=http://localhost:8080
-    MEDIAWIKI_USER=not-the-real-one
-    MEDIAWIKI_PASSWORD=not-the-real-one
 
 Chromedriver has to run in one terminal window:
 
