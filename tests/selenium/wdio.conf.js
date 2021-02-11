@@ -5,8 +5,7 @@ require( 'dotenv' ).config();
 /**
  * See also: http://webdriver.io/guide/testrunner/configurationfile.html
  */
-const fs = require( 'fs' ),
-	saveScreenshot = require( 'wdio-mediawiki' ).saveScreenshot;
+const fs = require( 'fs' );
 
 exports.config = {
 	// ======
@@ -71,21 +70,6 @@ exports.config = {
 	mochaOpts: {
 		ui: 'bdd',
 		timeout: 1000 * 1000
-	},
-
-	// =====
-	// Hooks
-	// =====
-
-	/**
-	 * Save a screenshot when test fails.
-	 *
-	 * @param {Object} test Mocha Test object
-	 */
-	afterTest: function ( test ) {
-		if ( !test.passed ) {
-			const filePath = saveScreenshot( test.title );
-			console.log( '\n\tScreenshot: ' + filePath + '\n' );
-		}
 	}
+
 };

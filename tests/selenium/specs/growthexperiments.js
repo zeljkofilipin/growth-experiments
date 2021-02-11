@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require( 'assert' );
+const saveScreenshot = require( 'wdio-mediawiki' ).saveScreenshot;
 const UserLoginPage = require( 'wdio-mediawiki/LoginPage' );
 const SpecialRandomPage = require( '../pageobjects/special.random.page' );
 
@@ -33,11 +33,18 @@ describe( 'GrowthExperiments', function () {
 		];
 
 		wikis.forEach( function ( wiki ) {
-			console.log( wiki );
+			console.log( `🌻 ${wiki}` );
 			SpecialRandomPage.openForEditing( wiki );
-			SpecialRandomPage.helpPanel.waitForDisplayed();
-			assert( SpecialRandomPage.helpPanel.isDisplayed() );
-			browser.pause( 1000 );
+
+			try {
+				SpecialRandomPage.helpPanel.waitForDisplayed();
+			} catch ( e ) {
+				console.log( `💣 ${e.message}` );
+			}
+
+			const filePath = saveScreenshot( wiki );
+			console.log( `📸 ${filePath}` );
+
 		} );
 	} );
 
