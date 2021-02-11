@@ -70,7 +70,7 @@ exports.config = {
 	// See also: http://mochajs.org
 	mochaOpts: {
 		ui: 'bdd',
-		timeout: 60 * 1000
+		timeout: 1000 * 1000
 	},
 
 	// =====
