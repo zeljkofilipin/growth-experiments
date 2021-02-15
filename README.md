@@ -2,6 +2,10 @@
 
 For more information see [Growth/Focus on help desk/Help panel](https://www.mediawiki.org/wiki/Growth/Focus_on_help_desk/Help_panel) and [MediaWiki Selenium](https://www.mediawiki.org/wiki/Selenium) pages.
 
+## Install dependencies
+
+    npm ci
+
 ## Setup
 
 Create `.env` file in the root of the repository.
@@ -11,13 +15,7 @@ Create `.env` file in the root of the repository.
     MW_SCRIPT_PATH=/w
     MW_SERVER=https://test.wikipedia.org
 
-Chromedriver has to run in one terminal window:
-
-    chromedriver --url-base=wd/hub --port=4444
-
 ## Run all specs
-
-In another terminal window:
 
     npm run selenium-test
 
